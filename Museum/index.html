@@ -1,0 +1,846 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+         href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+         rel="stylesheet"
+         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+         crossorigin="anonymous"
+        />
+        <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+      />
+        <link rel="stylesheet" href="style.css"/>
+        <title>HeritageHub</title>
+    </head>
+    <body>
+        <!--Header Section-->
+        <header>
+            <a href="/" class="logo">HeritageHub</a>
+            <ul class="nav">
+                <li><a class ="nav-btn active" href="/"><ion-icon name="home-outline"></ion-icon></a></li>
+                <li><a class="nav-btn" href="#" data-target="exhibition">exhibitions</a></li>
+                <li><a class="nav-btn" href="#" data-target="collection">collection</a></li>
+                <li><a class="nav-btn" href="#" data-target="events">events</a></li>
+                <li><a class="nav-btn" href="#" data-target="shop">shop</a></li>
+            </ul>
+            <a href="#" class="bag">
+                <ion-icon name="bag-outline"></ion-icon>
+                <span class="number">5</span>
+            </a>
+            <a href="#" class="menu" onclick="toggleMenu();"
+                ><ion-icon name="grid-outline"></ion-icon
+            ></a>
+        </header>
+        <!--Navigation Mobile-->
+        <ul class="nav-mobile">
+            <li>
+                <a class="nav-btn active" href="/"
+                    ><ion-icon name="home-outline"></ion-icon
+                ></a>
+            </li>
+            <li>
+                <a class="nav-btn" href="#" data-target="exhibition">exhibition</a>    
+            </li>
+            <li>
+                <a class="nav-btn" href="#" data-target="collection">collection</a>
+            </li>
+            <li><a class="nav-btn" href="#" data-target="events">events</a></li>
+            <li><a class="nav-btn" href ="#" data-target="shop">shop</a></li>
+        </ul>
+        <!--Hero Banner Section-->
+        <div class="banner container-fluid">
+            <div class="row d-flex align-items-center">
+                <div class="col-lg-5 col-md-12">
+                    <!--Apply Bootstrap Carousal-->
+                    <div id="carouselIndicators" class="carousel slide">
+                        <div class="carousel-inner">
+                          <!--carousal item index 0-->
+                          <div class="carousel-item active">
+                             <div class="content">
+                                <h1>Museum</h1>
+                                <h4>Emperor Seat</h4>
+                                <p>Emperor Seat Paragraph</p>
+                                <a 
+                                    data-bs-toggle="modal" 
+                                    data-bs-target="#itemModal" 
+                                    class="content-btn" 
+                                    href="#"
+                                > 
+                                    book exhibition</a
+                                >
+                            </div>
+                          </div>
+                          <!--carousal item index 1-->
+                          <div class="carousel-item">
+                            <div class="content">
+                                <h1>Royal</h1>
+                                <h4>Furniture</h4>
+                                <p>Emperor Seat Paragraph</p>
+                                <a class="content-btn" href="#"> book exhibition</a>
+                            </div>
+                          </div>
+                          <!--carousal item index 2-->
+                          <div class="carousel-item">
+                            <div class="content">
+                                <h1>Antiques</h1>
+                                <h4>Book Collections</h4>
+                                <p>Emperor Seat Paragraph</p>
+                                <a class="content-btn" href="#"> book exhibition</a>
+                            </div>
+                          </div>
+                          <!--carousal item index 3-->
+                          <div class="carousel-item">
+                            <div class="content">
+                                <h1>Royal</h1>
+                                <h4>Timber Chair</h4>
+                                <p>Emperor Seat Paragraph</p>
+                                <a class="content-btn" href="#"> book exhibition</a>
+                            </div>
+                          </div>
+                          <!--carousal item index 4-->
+                            <div class="carousel-item">
+                                <div class="content">
+                                    <h1>Royal</h1>
+                                    <h4>Hand Fan</h4>
+                                    <p>Emperor Seat Paragraph</p>
+                                    <a class="content-btn" href="#"> book exhibition</a>
+                                </div>
+                          </div>
+                          <!--carousal item index 5-->
+                          <div class="carousel-item">
+                            <div class="content">
+                                <h1>Royal</h1>
+                                <h4>Paired Vases</h4>
+                                <p>Emperor Seat Paragraph</p>
+                                <a class="content-btn" href="#"> book exhibition</a>
+                            </div>
+                         </div>
+                         <!--carousal item index 6-->
+                          <div class="carousel-item">
+                            <div class="content">
+                                <h1>Elegent</h1>
+                                <h4>Vases</h4>
+                                <p>Emperor Seat Paragraph</p>
+                                <a class="content-btn" href="#"> book exhibition</a>
+                            </div>
+                          </div>
+                         <!--carousal item index 7-->
+                          <div class="carousel-item">
+                                <div class="content">
+                                    <h1>Golden</h1>
+                                    <h4>Painted Vase</h4>
+                                    <p>Emperor Seat Paragraph</p>
+                                    <a class="content-btn" href="#"> book exhibition</a>
+                                </div>
+                          </div>
+                        </div>
+                    </div>
+                </div>    
+                <div class="col-lg-7 col-md-12">
+                    <div id="drag-container">
+                        <div id="spin-container">
+                          <img 
+                          data-bs-target="#carouselIndicators" 
+                          data-bs-slide-to="0"
+                          src="./images/antique-1.png"alt="" />
+                          <img
+                          data-bs-target="#carouselIndicators" 
+                          data-bs-slide-to="1"
+                          src="./images/antique-2.png"alt="" />
+                          <img
+                          data-bs-target="#carouselIndicators" 
+                          data-bs-slide-to="2"
+                          src="./images/antique-3.png"alt="" />
+                          <img 
+                          data-bs-target="#carouselIndicators" 
+                          data-bs-slide-to="3"
+                          src="./images/antique-4.png"alt="" />
+                          <img 
+                          data-bs-target="#carouselIndicators" 
+                          data-bs-slide-to="4"
+                          src="./images/antique-5.png"alt="" />
+                          <img 
+                          data-bs-target="#carouselIndicators" 
+                          data-bs-slide-to="5"
+                          src="./images/antique-6.png"alt="" />
+                          <img 
+                          data-bs-target="#carouselIndicators" 
+                          data-bs-slide-to="6"
+                          src="./images/antique-7.png"alt="" />
+                          <img 
+                          data-bs-target="#carouselIndicators" 
+                          data-bs-slide-to="7"
+                          src="./images/antique-8.png"alt="" />
+                          <h1>Asian Anitques</h1> 
+                        </div>
+                        <div id="ground"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Main Section Start-->
+        <main>
+        <!--Exhibition Section-->
+        <section id="exhibition" class="exhibition">
+           <div class="exhibition-title">
+                <h1>exhibition</h1>
+           </div>
+           <div class="section-content container-fluid">
+                <div class="row">
+                    <div class="col-lg-6 ">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <img
+                                src="./images/exhibition-1.png"
+                                alt=""
+                                class="exhibition-img img-fluid"
+                                />
+                            </div>
+                            <div class="col-lg-6 d-flex flex-column justify-content-center"> 
+                                <div class="content">
+                                    <h4>Conetnt apna likhna hai</h4>
+                                    <p>Yahan b apna para likhna hai</p>
+                                    <h4 class="price">$58.50</h4>
+                                    <a href="#" class="content-btn">Book Ticket</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <img
+                                src="./images/exhibition-2.png"
+                                alt=""
+                                class="exhibition-img img-fluid"
+                                />
+                        </div>
+                        <div class="col-lg-6 d-flex flex-column justify-content-center"> 
+                                <div class="content">
+                                    <h4>Conetnt apna likhna hai</h4>
+                                    <p>Yahan b apna para likhna hai</p>
+                                    <h4 class="price">$58.50</h4>
+                                    <a href="#" class="content-btn">Book Ticket</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <img
+                                src="./images/exhibition-3.png"
+                                alt=""
+                                class="exhibition-img img-fluid"
+                                />
+                        </div>
+                        <div class="col-lg-6 d-flex flex-column justify-content-center"> 
+                                <div class="content">
+                                    <h4>Conetnt apna likhna hai</h4>
+                                    <p>Yahan b apna para likhna hai</p>
+                                    <h4 class="price">$58.50</h4>
+                                    <a href="#" class="content-btn">Book Ticket</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <img
+                                src="./images/exhibition-4.png"
+                                alt=""
+                                class="exhibition-img img-fluid"
+                                />
+                        </div>
+                        <div class="col-lg-6 d-flex flex-column justify-content-center"> 
+                                <div class="content">
+                                    <h4>Conetnt apna likhna hai</h4>
+                                    <p>Yahan b apna para likhna hai</p>
+                                    <h4 class="price">$58.50</h4>
+                                    <a href="#" class="content-btn">Book Ticket</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <img
+                                src="./images/exhibition-5.png"
+                                alt=""
+                                class="exhibition-img img-fluid"
+                                />
+                        </div>
+                        <div class="col-lg-6 d-flex flex-column justify-content-center"> 
+                                <div class="content">
+                                    <h4>Conetnt apna likhna hai</h4>
+                                    <p>Yahan b apna para likhna hai</p>
+                                    <h4 class="price">$58.50</h4>
+                                    <a href="#" class="content-btn">Book Ticket</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <img
+                                src="./images/exhibition-6.png"
+                                alt=""
+                                class="exhibition-img img-fluid"
+                                />
+                        </div>
+                        <div class="col-lg-6 d-flex flex-column justify-content-center"> 
+                                <div class="content">
+                                    <h4>Conetnt apna likhna hai</h4>
+                                    <p>Yahan b apna para likhna hai</p>
+                                    <h4 class="price">$58.50</h4>
+                                    <a href="#" class="content-btn">Book Ticket</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--Collection Section-->
+        <section id="collection" class="collection">
+            <div class="collection-title">
+                <h1>Col <br />lec <br />tion</h1>
+            </div>
+            <div class="section-content container-fluid">
+                <div class="row">
+                    <div class="col-lg-8 d-flex align-items-center justify-content-end">
+                        <!-- Slider main container -->
+                        <div class="swiper artsSwiper">
+                            <!-- Additional required wrapper -->
+                            <div class="swiper-wrapper">
+                                <!-- Slides -->
+                                <!--Slide 1-->
+                                <div 
+                                 class="swiper-slide d-flex align-items-center justify-content-end"
+                                >
+                                    <div class="arts-item">
+                                        <div class="img-box">
+                                            <img 
+                                                src="./images/collection-1.jpeg"
+                                                alt="" 
+                                                class="arts-img img-fluid"
+                                            />
+                                            <img 
+                                                class="arts-frame img-fluid" 
+                                                src="./images/frame.png" 
+                                                alt=""
+                                            />
+                                        </div>
+                                        <h3 class="me-3">This is the arts name</h3>
+                                    </div>
+                                </div>
+                                <!--Slide 2-->
+                                <div 
+                                 class="swiper-slide d-flex align-items-center justify-content-end"
+                                >
+                                   <div class="arts-item">
+                                       <div class="img-box">
+                                           <img 
+                                               src="./images/collection-2.jpeg"
+                                               alt="" 
+                                               class="arts-img img-fluid"
+                                           />
+                                           <img 
+                                               class="arts-frame img-fluid" 
+                                               src="./images/frame.png" 
+                                               alt=""
+                                           />
+                                       </div>
+                                       <h3 class="me-3">This is the arts name</h3>
+                                   </div>
+                                </div>
+                                <!--Slide 3-->
+                                <div 
+                                class="swiper-slide d-flex align-items-center justify-content-end"
+                               >
+                                  <div class="arts-item">
+                                      <div class="img-box">
+                                          <img 
+                                              src="./images/collection-3.jpg"
+                                              alt="" 
+                                              class="arts-img img-fluid"
+                                          />
+                                          <img 
+                                              class="arts-frame img-fluid" 
+                                              src="./images/frame.png" 
+                                              alt=""
+                                          />
+                                      </div>
+                                      <h3 class="me-3">This is the arts name</h3>
+                                  </div>
+                               </div>
+                               <!--Slide 4-->
+                               <div 
+                               class="swiper-slide d-flex align-items-center justify-content-end"
+                              >
+                                 <div class="arts-item">
+                                     <div class="img-box">
+                                         <img 
+                                             src="./images/collection-4.jpeg"
+                                             alt="" 
+                                             class="arts-img img-fluid"
+                                         />
+                                         <img 
+                                             class="arts-frame img-fluid" 
+                                             src="./images/frame.png" 
+                                             alt=""
+                                         />
+                                     </div>
+                                     <h3 class="me-3">This is the arts name</h3>
+                                 </div>
+                              </div>
+                              <!--Slide 5-->
+                              <div 
+                              class="swiper-slide d-flex align-items-center justify-content-end"
+                             >
+                                <div class="arts-item">
+                                    <div class="img-box">
+                                        <img 
+                                            src="./images/collection-5.jpeg"
+                                            alt="" 
+                                            class="arts-img img-fluid"
+                                        />
+                                        <img 
+                                            class="arts-frame img-fluid" 
+                                            src="./images/frame.png" 
+                                            alt=""
+                                        />
+                                    </div>
+                                    <h3 class="me-3">This is the arts name</h3>
+                                </div>
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="arts-description d-flex flex-column">
+                          <p 
+                             class="d-inline-flex justify-content-start align-items-center gap-3"
+                            >
+                             <ion-icon name="arrow-back-outline"></ion-icon> Arts Item
+                             Descriptions Here
+                            </p>
+                            <p 
+                             class="d-inline-flex justify-content-start align-items-center gap-3"
+                            >
+                             <ion-icon name="arrow-back-outline"></ion-icon> Lorem ipsum
+                             dolor sit amet consectetur    
+                           </p>
+                           <p 
+                             class="d-inline-flex justify-content-start align-items-center gap-3"
+                            >
+                             <ion-icon name="arrow-back-outline"></ion-icon> Lorem ipsum
+                             dolor sit amet consectetur    
+                            </p>
+                            <p 
+                             class="d-inline-flex justify-content-start align-items-center gap-3"
+                            >
+                             <ion-icon name="arrow-back-outline"></ion-icon> Lorem ipsum
+                             dolor sit amet consectetur    
+                            </p>
+                            <p 
+                             class="d-inline-flex justify-content-start align-items-center gap-3"
+                            >
+                             <ion-icon name="arrow-back-outline"></ion-icon> Lorem ipsum
+                             dolor sit amet consectetur    
+                            </p>
+                            <p 
+                             class="d-inline-flex justify-content-start align-items-center gap-3"
+                            >
+                             <ion-icon name="arrow-back-outline"></ion-icon> Lorem ipsum
+                             dolor sit amet consectetur    
+                            </p>
+                            <p 
+                             class="d-inline-flex justify-content-start align-items-center gap-3"
+                            >
+                             <ion-icon name="arrow-back-outline"></ion-icon> Lorem ipsum
+                             dolor sit amet consectetur    
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--Events Section-->
+        <section id="events" class="events">
+            <div class="section-content container-fluid">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <img src="./images/events-1.jpg" alt="" class="img-fluid"/>
+                    </div>
+                    <div 
+                        class="col-lg-6 d-flex flex-column align-items-start justify-content-center"
+                    >
+                        <h1>Lorem ipsum dolor sit amet.</h1>
+                        <h4>Events Time: 22 September, 3.30pm</h4>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.<br>Dolorem voluptas obcaecati doloremque quo repellendus?<br>Quos provident obcaecati eos architecto est.
+                        </p>
+                        <a href="#" class="content-btn">Book Now</a> 
+                    </div>
+                </div>
+                <div class="row">
+                    <div 
+                        class="col-lg-6 d-flex flex-column align-items-end justify-content-center"
+                    >
+                        <h1>Lorem ipsum dolor sit amet.</h1>
+                        <h4>Events Time: 27 September, 6.30pm</h4>
+                        <p class="text-end">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.<br>Dolorem voluptas obcaecati doloremque quo repellendus?<br>Quos provident obcaecati eos architecto est.
+                        </p>
+                        <a href="#" class="content-btn">Book Now</a> 
+                    </div>
+                    <div class="col-lg-6">
+                        <img src="./images/events-2.jpg" alt="" class="img-fluid"/>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--Shop Section-->
+        <section id="shop" class="shop">
+            <div class="section-content container">
+                <div class="row">
+                    <div class="col-lg-12 d-flex justify-content-center">
+                      <ul id="portfolio-filters">
+                         <li data-filter="*" class="filter-active">All</li>
+                         <li data-filter=".filter-gifts">Gifts</li>
+                         <li data-filter=".filter-collectibles">Collectibles</li>
+                         <li data-filter=".filter-books">Books</li>
+                      </ul>  
+                    </div>
+                </div>
+                <div class="row portfolio-container">
+                    <div class="col-lg-4 col-md-6 portfolio-item filter-gifts">
+                        <div class="portfolio-wrap">
+                            <img 
+                             src="./images/shop/portfolio-1.jpg"
+                             class="img-fluid" 
+                             alt="" 
+                            />
+                            <div class="portfolio-info">
+                             <h4>Gift One</h4>
+                             <p>$25.66</p>
+                                <div class="portfolio-links">
+                                  <a href="./images/shop/portfolio-1.jpg"
+                                    ><ion-icon name="bag-add-outline"></ion-icon
+                                  ></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Map the remaining portfolio items-->
+                    <div class="col-lg-4 col-md-6 portfolio-item filter-books">
+                        <div class="portfolio-wrap">
+                            <img 
+                             src="./images/shop/portfolio-2.jpg"
+                             class="img-fluid" 
+                             alt="" 
+                            />
+                            <div class="portfolio-info">
+                             <h4>Gift One</h4>
+                             <p>$25.66</p>
+                                <div class="portfolio-links">
+                                  <a href="./images/shop/portfolio-2.jpg"
+                                    ><ion-icon name="bag-add-outline"></ion-icon
+                                  ></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 portfolio-item filter-gifts">
+                        <div class="portfolio-wrap">
+                            <img 
+                             src="./images/shop/portfolio-3.jpg"
+                             class="img-fluid" 
+                             alt="" 
+                            />
+                            <div class="portfolio-info">
+                             <h4>Gift One</h4>
+                             <p>$25.66</p>
+                                <div class="portfolio-links">
+                                  <a href="./images/shop/portfolio-3.jpg"
+                                    ><ion-icon name="bag-add-outline"></ion-icon
+                                  ></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 portfolio-item filter-collectibles">
+                        <div class="portfolio-wrap">
+                            <img 
+                             src="./images/shop/portfolio-4.jpg"
+                             class="img-fluid" 
+                             alt="" 
+                            />
+                            <div class="portfolio-info">
+                             <h4>Gift One</h4>
+                             <p>$25.66</p>
+                                <div class="portfolio-links">
+                                  <a href="./images/shop/portfolio-4.jpg"
+                                    ><ion-icon name="bag-add-outline"></ion-icon
+                                  ></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 portfolio-item filter-books">
+                        <div class="portfolio-wrap">
+                            <img 
+                             src="./images/shop/portfolio-5.jpg"
+                             class="img-fluid" 
+                             alt="" 
+                            />
+                            <div class="portfolio-info">
+                             <h4>Gift One</h4>
+                             <p>$25.66</p>
+                                <div class="portfolio-links">
+                                  <a href="./images/shop/portfolio-5.jpg"
+                                    ><ion-icon name="bag-add-outline"></ion-icon
+                                  ></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 portfolio-item filter-gifts">
+                        <div class="portfolio-wrap">
+                            <img 
+                             src="./images/shop/portfolio-6.jpg"
+                             class="img-fluid" 
+                             alt="" 
+                            />
+                            <div class="portfolio-info">
+                             <h4>Gift One</h4>
+                             <p>$25.66</p>
+                                <div class="portfolio-links">
+                                  <a href="./images/shop/portfolio-6.jpg"
+                                    ><ion-icon name="bag-add-outline"></ion-icon
+                                  ></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 portfolio-item filter-collectibles">
+                        <div class="portfolio-wrap">
+                            <img 
+                             src="./images/shop/portfolio-7.jpg"
+                             class="img-fluid" 
+                             alt="" 
+                            />
+                            <div class="portfolio-info">
+                             <h4>Gift One</h4>
+                             <p>$25.66</p>
+                                <div class="portfolio-links">
+                                  <a href="./images/shop/portfolio-7.jpg"
+                                    ><ion-icon name="bag-add-outline"></ion-icon
+                                  ></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 portfolio-item filter-collectibles">
+                        <div class="portfolio-wrap">
+                            <img 
+                             src="./images/shop/portfolio-8.jpg"
+                             class="img-fluid" 
+                             alt="" 
+                            />
+                            <div class="portfolio-info">
+                             <h4>Gift One</h4>
+                             <p>$25.66</p>
+                                <div class="portfolio-links">
+                                  <a href="./images/shop/portfolio-8.jpg"
+                                    ><ion-icon name="bag-add-outline"></ion-icon
+                                  ></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 portfolio-item filter-books">
+                        <div class="portfolio-wrap">
+                            <img 
+                             src="./images/shop/portfolio-9.jpg"
+                             class="img-fluid" 
+                             alt="" 
+                            />
+                            <div class="portfolio-info">
+                             <h4>Gift One</h4>
+                             <p>$25.66</p>
+                                <div class="portfolio-links">
+                                  <a href="./images/shop/portfolio-9.jpg"
+                                    ><ion-icon name="bag-add-outline"></ion-icon
+                                  ></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+        <!--Main Section End-->
+        <!--Modal-->
+        <!--Apply Modal Changes To any Place Necessary-->
+        <div 
+         class="modal fade" 
+         id="itemModal" 
+         tabindex="-1" 
+         aria-labelledby="exampleModalLabel" 
+         aria-hidden="true"
+        >
+            <div class="modal-dialog modal-fullscreen">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">
+                        Book in your favourite exhibition now
+                  </h1>
+                </div>
+                <div class="modal-body">
+                    <!--The Contact, booking form and Social-->
+                    <div class="container contact">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="info-box mb-4">
+                                    <ion-icon name="navigate-circle-outline"></ion-icon>
+                                    <h3>Exhibition Location</h3>
+                                    <p>Sector H-11, Islamabad</p>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-3 col-md-6">
+                                <div class="info-box mb-4">
+                                    <ion-icon name="mail-outline"></ion-icon>
+                                    <h3>Email us</h3>
+                                    <p>daniyalqureshi644@gmail.com</p>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-3 col-md-6">
+                                <div class="info-box mb-4">
+                                    <ion-icon name="call-outline"></ion-icon>
+                                    <h3>Call us</h3>
+                                    <p>+92 346 1706663</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <iframe 
+                                    class="mb-4 mb-lg-0" 
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26569.00714670849!2d72.98972256031735!3d33.653899714994054!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38df95e99efaafcd%3A0x88bb2f3f1fec4171!2sH-11%2C%20Islamabad%2C%20Islamabad%20Capital%20Territory%2C%20Pakistan!5e0!3m2!1sen!2s!4v1703706968212!5m2!1sen!2s" 
+                                    style="border: 0; width: 100%; height: 384px" 
+                                    allowfullscreen="" 
+                                    frameborder="0"
+                                ></iframe>
+                            </div>
+
+                            <div class="col-lg-6">
+                                <form class="contact_form">
+                                    <div class="row">
+                                        <div class="col-md-6 form-group">
+                                            <input 
+                                                type="text" 
+                                                name="name" 
+                                                class="form-control" 
+                                                id="name" 
+                                                placeholder="your Name" 
+                                                required 
+                                            />
+                                        </div>
+                                        <div class="col-md-6 form-group mt-3 mt-md-0">
+                                            <input
+                                                type="email"
+                                                class="form-control"
+                                                name="email"
+                                                id="email"
+                                                placeholder="Your Email"
+                                                required
+                                            />
+                                        </div>
+                                    </div>
+                                    <div class="form-group mt-3">
+                                        <input
+                                            type="text"
+                                            class="form-control"
+                                            name="subject"
+                                            id="subject"
+                                            placeholder="Subject"
+                                            required
+                                        />
+                                    </div>
+                                    <div class="form-group mt-3">
+                                        <textarea
+                                            class="form-control"
+                                            name="message"
+                                            rows="5"
+                                            placeholder="Message"
+                                            required
+                                        ></textarea>
+                                    </div>
+                                    <div class="text-center">
+                                        <button class="content-btn" type="submit">
+                                            Book Now
+                                        </button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <ul class="sci">
+                                <li>
+                                    <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+                                </li>
+                                <li>
+                                    <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+                                </li>
+                                <li>
+                                    <a href="#"><ion-icon name="logo-youtube"></ion-icon></a>
+                                </li>
+                                <li>
+                                    <a class="share" href="#"
+                                        ><ion-icon name="share-social-outline"></ion-icon
+                                    ></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button 
+                        type="button" 
+                        class="modal-close-btn" 
+                        data-bs-dismiss="modal"
+                    >
+                        Close
+                    </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        <!--javaScript Vendors-->
+        <script 
+        type="module"
+        src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js">
+        </script>
+        <script 
+        nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js">
+        </script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
+        </script>
+        <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <!--Customised javaScript-->
+        <script src="./js/carousel.js"></script>
+        <script src="./js/swiper.js"></script>
+        <script src="./js/isotope.js"></script>
+        <script src="./js/main.js"></script>
+    </body>
+</html>

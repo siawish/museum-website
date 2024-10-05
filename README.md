@@ -1,49 +1,78 @@
-**Museum Website**
-Welcome to the Museum Website repository! This project is designed to provide a responsive and aesthetically pleasing web interface for a museum, showcasing its exhibitions, history, and essential details in an easy-to-navigate format.
+---
 
-**Table of Contents**
-Features
-Technologies Used
-Installation
-Usage
-Contributing
-License
-Features
-Home Page: Displays the museum’s key highlights and upcoming exhibitions.
-Exhibition Page: Dedicated pages for individual exhibitions with details on exhibits and their descriptions.
-About Page: Provides a brief history and mission of the museum.
-Contact Page: Contains a form for users to reach out to the museum for inquiries, along with location details.
-Responsive Design: Adapted for mobile, tablet, and desktop devices to ensure a seamless user experience.
-Image Gallery: Allows visitors to visually explore the museum's collection online.
-Technologies Used
-HTML5: For structuring the web pages.
-CSS3: For styling the user interface.
-JavaScript: For adding interactivity and functionality.
-Bootstrap: A CSS framework used for building responsive layouts easily.
-jQuery: For simplifying DOM manipulation and event handling.
-Installation
-Clone the repository:
+# Museum Website
 
-bash
-Copy code
-git clone https://github.com/siawish/museum-website.git
-Navigate to the project folder:
+Welcome to the **Museum Website** repository! This project provides a sleek, responsive web interface for a museum, showcasing exhibitions, history, and essential visitor information.
 
-bash
-Copy code
-cd museum-website
-Open the index.html file in a browser: Simply open the index.html file in your web browser to preview the website.
+## Table of Contents
 
-Usage
-Once the website is up and running, you can navigate through the different pages: Home, Exhibitions, About, and Contact.
-You can customize the content of the site by editing the HTML files directly, or by adding new exhibitions in the gallery section.
-Contributing
-Contributions are welcome! Here's how you can help:
+- [Features](#features)
+- [Technologies Used](#technologies-used)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [License](#license)
 
-Fork the repository.
-Create a new branch (git checkout -b feature-branch).
-Commit your changes (git commit -m 'Add new feature').
-Push to the branch (git push origin feature-branch).
-Open a Pull Request.
-License
-This project is licensed under the MIT License - see the LICENSE file for details.
+## Features
+
+- **Home Page:** Highlights key information about the museum, including current exhibitions and events.
+- **Exhibition Pages:** Dedicated sections for each exhibition, featuring detailed descriptions and images of the exhibits.
+- **About Page:** Information about the museum's history, mission, and vision.
+- **Contact Page:** A form for visitor inquiries along with museum location and contact details.
+- **Responsive Design:** Optimized for a seamless user experience on mobile, tablet, and desktop devices.
+- **Image Gallery:** A visually appealing gallery for showcasing the museum's collection.
+
+## Technologies Used
+
+- **HTML5:** For structuring the content of the website.
+- **CSS3:** For styling and layout design.
+- **JavaScript:** For adding interactive features and functionality.
+- **Bootstrap:** A popular CSS framework for building responsive and mobile-first web pages.
+- **jQuery:** A JavaScript library that simplifies HTML document traversing and event handling.
+
+## Installation
+
+To set up the project locally, follow these steps:
+
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/siawish/museum-website.git
+   ```
+
+2. **Navigate to the project directory:**
+   ```bash
+   cd museum-website
+   ```
+
+3. **Open the `index.html` file in your web browser** to view the website.
+
+## Usage
+
+- Explore different sections of the website: Home, Exhibitions, About, and Contact.
+- Customize content by editing the HTML files, adding new exhibitions, or updating existing information.
+
+## Contributing
+
+Contributions are welcome! If you'd like to contribute to the project, please follow these steps:
+
+1. **Fork the repository** to your GitHub account.
+2. **Create a new branch** for your feature:
+   ```bash
+   git checkout -b feature-name
+   ```
+3. **Commit your changes:**
+   ```bash
+   git commit -m "Description of your changes"
+   ```
+4. **Push to your branch:**
+   ```bash
+   git push origin feature-name
+   ```
+5. **Open a Pull Request** to propose your changes.
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
+
+---
+
